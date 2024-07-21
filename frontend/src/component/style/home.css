@@ -1,0 +1,84 @@
+.banner{
+    background-color: rgb(66, 44, 90);
+    height: 100vmin;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.banner > h1{
+    margin:5vmax;;
+    font:900px
+}
+
+.banner::after{
+    content: " ";
+    width: 100vw;
+    height: 100vmin;
+    background-color: white;
+    position: absolute;
+    clip-path: polygon(100% 70%, 0% 100%, 100% 100%);
+}
+
+.homeheading{
+    text-align: center;
+    font-size: 1.4vmax;
+    width: 20vmax;
+    padding: 1vmax;
+    margin: 5vmax auto;
+    border-bottom: 1px solid black;
+}
+
+.productCard{
+    width: 14vmax;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: rgb(48,48,48);
+    margin: 2vmax;
+    transition: all 0.5s;
+    padding-bottom: 0.5vmax;
+}
+
+.productCard>div{
+    margin: 0.5vmax;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.productCard>div>span{
+    margin: 0.5vmax;
+    font-family: 'Roboto';
+    font-size: 1vmax;
+}
+.productCard>p{
+    font-family: 'Roboto';
+    font-size: 1.2vmax;
+    margin: 1vmax 0.5vmax;
+    margin-bottom: 0px;
+}
+
+.productCard>span{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.2vmax;
+    margin: 0.5vmax 0.5vmax;
+    margin-bottom: 0px;
+    color: tomato;
+}
+
+.productCard:hover{
+    box-shadow: 0 0 5px rgba(15,15,15,0.26);
+    transform: translateY(-1vmax);
+}   
+
+.container{
+    display: flex;
+    margin: 2vmax auto;
+    width: 80vw;
+    flex-wrap: wrap;
+    justify-content: center;
+}

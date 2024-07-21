@@ -1,0 +1,148 @@
+.loginsignupcontainer{
+    width: 100vw;
+    height: 100vw;
+    max-height: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: azure;
+    position: fixed;
+    top: 0%;
+    left:0;
+}
+
+.loginsignupbox{
+    background-color: white;
+    width: 30vw;
+    height: 70vh;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.login_signup_toogle{
+    display: flex;
+    height: 3vmax;
+}
+.signUpForm{
+    transform: translateY(-100%) translateX(-100vmax);
+}
+
+.login_signup_toogle p{
+    color: black;
+    padding-top: 11px;
+    font: 300 1.8vmax "Roboto";
+    transition: all 0.5s;
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+    width: 100%;
+}
+
+.login_signup_toogle p:hover{
+    color: tomato;
+}
+
+.shift_button{
+    background-color: tomato;
+    height: 3px;
+    width: 50%;
+    border: none;
+    transition: all 0.5s;
+}
+
+.loginForm,.signUpForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    padding: 2vmax;
+    justify-content: space-evenly;
+    height: 80%;
+    transition: all 0.5s;
+}
+
+.loginForm>div,
+.signForm>div{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.loginForm>div>input,
+.signUpForm>div>input{
+    padding: 1vmax 1vmax;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font:600 1.2vmax;
+    outline: none;
+}
+
+.loginForm>a{
+    color: rgb(156, 156, 156);
+    text-decoration: none;
+    align-self: flex-end;
+    transition: all 0.5s;
+}
+
+.loginForm>a:hover{
+    color: black;
+}
+
+.loginBtn,.SignUpBtn{
+    border:none;
+    background-color: tomato;
+    color: white;
+    font: 500 1.5vmax "Roboto";
+    width: 100%;
+    padding: 1vmax;
+    cursor: pointer;
+    transition: all 0.5s;
+    border-radius: 4px;
+    outline: none;
+    box-shadow:0 2px 5px black;
+}
+
+.loginBtn:hover,.SignUpBtn:hover{
+    background-color: rgb(165, 58, 39);
+}
+
+.shiftToLeft{
+    transform: translateX(-100%);
+}
+.shifttoNeutral{
+    transform:translateX(0%);
+}
+.shifttoNeutralForm{
+    transform:translateY(-100%);
+}
+.shiftToRight{
+    transform: translateX(100%);
+}
+
+@media screen and (max-width:600px){
+    .loginsignupcontainer{
+        background-color: white;
+    }
+    .loginsignupbox{
+        width: 100vw;
+        height: 95vh;
+    }
+    .login_signup_toogle{
+        height: 5vmax;
+    }
+    .login_signup_toogle>p{
+        font:300 1.8vmax "Roboto";
+    }
+    .loginForm,
+    .signUpForm{
+        padding: 5vmax;
+    }
+    .loginForm>div>input,
+    .signUpForm>div>input{
+        padding: 2.5vmax 5vmax;
+        font: 300 1.7vmax;
+    }
+}

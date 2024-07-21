@@ -1,0 +1,10 @@
+.productDetails{
+    width: 100vw;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 6vmax;
+}
+
+.CarouselImage{
+    overflow: visible;
+}
