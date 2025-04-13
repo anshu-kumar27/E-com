@@ -82,7 +82,6 @@ SMPT_PASSWORD="sample@password"
 ```bash
 curl --location 'http://localhost:3000/api/v1/register' \
 --header 'Content-Type: application/json' \
---header 'Cookie: token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZmI5YTczZTRiOTk5Y2I4Y2ZlZGY5ZSIsImlhdCI6MTc0NDU0MjMyNCwiZXhwIjoxNzQ0OTc0MzI0fQ.322LJOp11qlfGlRcLnQWbz7S_8C8k15cAyZYgsRcJF0' \
 --data-raw '{
     "name":"anshu",
     "email":"anshu@gmail.com",
