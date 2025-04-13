@@ -45,21 +45,22 @@ git clone https://github.com/yourusername/ecommerce-platform.git
 cd ecommerce-platform
 ```
 
-### 1. install the files using npm command
+### 2. install the files using npm command
 ```bash
-//install the dependencies of backend
+//install the dependencies for backend
 cd backend
 npm i
+
 // go back to the previous folder
 cd ../
 
-//install the dependencies of frontend
+//install the dependencies for frontend
 cd frontend
 npm i
 ```
 
 
-### 1. Setup .env
+### 3. Setup .env
 ```bash
 # this is config.env
 
@@ -75,4 +76,16 @@ COOKIE_EXPIRE = 5
 SMPT_SERVICE ="gmail"
 SMPT_MAIL= "sample@gmail.com"
 SMPT_PASSWORD="sample@password"
+```
+
+### 4. sample CURL to insert a new user into the backend (check if its working xD)
+```bash
+curl --location 'http://localhost:3000/api/v1/register' \
+--header 'Content-Type: application/json' \
+--header 'Cookie: token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZmI5YTczZTRiOTk5Y2I4Y2ZlZGY5ZSIsImlhdCI6MTc0NDU0MjMyNCwiZXhwIjoxNzQ0OTc0MzI0fQ.322LJOp11qlfGlRcLnQWbz7S_8C8k15cAyZYgsRcJF0' \
+--data-raw '{
+    "name":"anshu",
+    "email":"anshu@gmail.com",
+    "password":"anshu@gmail"
+}'
 ```
